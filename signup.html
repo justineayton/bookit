@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>login page</title>
+        <title>sign up page</title>
     </head>
     <style>
         @media screen and (min-device-width: 320px) {
@@ -17,8 +17,20 @@
                 z-index: -1;
             }
             
+            #inputss {
+                z-index: 4;
+                top: 7%;
+                position: absolute;
+            }
+            
+            #inputss2 {
+                z-index: 4;
+                top: 62%;
+                position: absolute;
+            }
+            
             .signupinputs {
-                height: 45px;
+                height: 60px;
                 width: 80%;
                 margin-left: 10%;
                 margin-right: 10%;
@@ -32,12 +44,35 @@
                 
             }
             
+            #signupbut {
+                background-color: #3286c4;
+                color: #fff;
+                width: 60%;
+                border-radius: 9px;
+                border: 0;
+                z-index: 3;
+                top: 54%;
+                position: absolute;
+                height: 40px;
+                font-size: 20px;
+                margin-left: 18%;
+            }
+            
+            #or {
+                font-size: 50%;
+                color: #fff;
+                top: 58%;
+                position: absolute;
+                margin-left: 48%;
+                text-decoration-line: underline;
+            }
+            
             #header {
                 z-index: 1;
                 width: 100%;
                 top: 0;
                 background-color: #0e034a;
-                height: 50px;
+                height: 10%;
                 
             }
             
@@ -45,7 +80,7 @@
                 z-index: 2;
                 width: 30%;
                 height: auto;
-                margin-top: 3%;
+                margin-top: 1%;
                 margin-left: 5%;
             }
             
@@ -63,9 +98,23 @@
         </div>
         <img id="backgroundimg" src="images/background.jpg"/>
         
-        <input class="signupinputs" id="fname" placeholder="Firstname"/>
-        <input class="signupinputs" id="lname" placeholder="Lastname"/>
-        <input class="signupinputs" id="pword" placeholder="Password"/>
-        <input class="signupinputs" id="email" placeholder="Email"/>
+        <div id="inputss">
+        <input class="signupinputs" placeholder="Firstname"/>
+        <input class="signupinputs" placeholder="Lastname"/>
+        <input class="signupinputs" placeholder="Password"/>
+        <input class="signupinputs" placeholder="Re-enter Password"/>
+        <input class="signupinputs" placeholder="Email"/>
+        <input class="signupinputs" placeholder="Phone Number"/>
+            
+        </div>
+        
+        <button id="signupbut">Sign Up</button>
+        <p id="or">OR</p>
+        
+        <div id="inputss2">
+        <input class="signupinputs" placeholder="Sign up with Facebook"/>
+        <input class="signupinputs" placeholder="Sign up with Google+"/>
+        </div>
+        
     </body>
 </html>
