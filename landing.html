@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookit@BCIT</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {box-sizing: border-box;}
+
+html {font-family: sans-serif;}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+	background: url(images/background.jpg) no-repeat center fixed; 
+	background-size: cover;
+	}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	padding:15px;
+	margin-top: 30%;
+}
+        
+        @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.intro {
+	color:#fff;
+	text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10%;
+    padding:15px;
+    opacity: 0.7;
+}
+
+#imnew {
+	width: 50%;
+	float:left;
+    color: #fff;
+    border: none;
+    padding: 8%;
+	font-weight: 100;
+    font-size: 18px;
+    background-color: rgba(22, 51, 90, 0.74);
+	margin-top:10%;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+#signin {
+    width:50%;
+    color: #fff;
+    border: none;
+    padding: 8%;
+	font-weight: 100;
+    font-size: 18px;
+    background-color: rgba(75, 134, 178, 0.49);
+	margin-top:10%;
+	bottom: 0;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+    </style>
+</head>
+
+<body>
+<img class="logo fade-in one" src="images/logo.png">
+<p class="intro">A new easy way to book a study room anywhere on campus</p>
+<button type="button" id="imnew">I'm new</button>
+<button type="button" id="signin">Sign in</button>
+
+</body>
+</html>
