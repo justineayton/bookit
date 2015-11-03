@@ -17,12 +17,26 @@
                 z-index: -1;
             }
             
+            #inputss {
+                z-index: 4;
+                top: 7%;
+                position: absolute;
+            }
+            
+            #inputss2 {
+                z-index: 4;
+                top: 62%;
+                position: absolute;
+            }
+            
             .logininputs {
-                height: 45px;
+                height: 60px;
                 width: 80%;
                 margin-left: 10%;
                 margin-right: 10%;
-                z-index: 0;
+                margin-top: 5%;
+                margin-bottom: 2%;
+                z-index: 3;
                 background-color: rgba(209, 209, 209, 0.37);
                 border: 0;
                 font-size: 15px;
@@ -30,79 +44,46 @@
                 
             }
             
-            #email {
-                z-index: 3;
-                margin-top: 7%;
-                position: absolute;
-                
-            }
-            
-            #password {
-                z-index: 3;
-                margin-top: 22%;
-                position: absolute;
-
-            }
-            
-            #fblogin {
-                z-index: 3;
-                margin-bottom: 20%;
-               
-                
-            }
-            
-            #googlelogin {
-                z-index: 3;
-                
-                
-                
-            }
-            
-            #login {
+            #loginbut {
                 background-color: #3286c4;
                 color: #fff;
                 width: 60%;
                 border-radius: 9px;
                 border: 0;
                 z-index: 3;
-                margin-top: 45%;
+                top: 54%;
                 position: absolute;
-                margin-left: 20%;
-                margin-right: 20%;
                 height: 40px;
                 font-size: 20px;
+                margin-left: 18%;
             }
             
-            #rememberme {
-                border: 0;
-                background-color: rgba(255, 255, 255, 0);
-                z-index: 3;
-                margin-top: 65%;
-                position: absolute;
-                margin-left: 32%;
-                margin-right: 32%;
+            .rememberforgot {
                 color: #fff;
-                font-size: 15px;
+                font-size: 20px;
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+                top: 20%;
+                position: absolute;
+                
             }
             
-            #forgotpassword {
-                border: 0;
-                background-color: rgba(255, 255, 255, 0);
-                z-index: 3;
-                margin-top: 75%;
-                position: absolute;
-                margin-left: 25%;
-                margin-right: 20%;
+            #or {
+                font-size: 50%;
                 color: #fff;
-                font-size: 15px;
+                top: 58%;
+                position: absolute;
+                margin-left: 48%;
+                text-decoration-line: underline;
             }
+            
             
             #header {
                 z-index: 1;
                 width: 100%;
                 top: 0;
                 background-color: #0e034a;
-                height: 50px;
+                height: 10%;
                 
             }
             
@@ -110,7 +91,7 @@
                 z-index: 2;
                 width: 30%;
                 height: auto;
-                margin-top: 3%;
+                margin-top: 1%;
                 margin-left: 5%;
             }
             
@@ -127,12 +108,22 @@
             <img id="logo" src="images/logo.png"/>
         </div>
         <img id="backgroundimg" src="images/background.jpg"/>
-        <input class="logininputs" id="email" placeholder="Email"/>
-        <input class="logininputs" id="password" placeholder="Password"/>
-        <button id="login">Login</button>
-        <button id="rememberme">Remember me</button>
-        <button id="forgotpassword">Forgot your password?</button>
-        <input class="logininputs" id="fblogin" placeholder="Login with Facebook"/>
-        <input class="logininputs" id="googlelogin" placeholder="Login with Google+"/>
+        
+        <div id="inputss">
+        <input class="logininputs" placeholder="Email"/>
+        <input class="logininputs" placeholder="Password"/>
+            
+        </div>
+        
+        <button id="loginbut">Login</button>
+        <button class="rememberforgot">Remember me</button>
+        <button class="rememberforgot">Forgot your password?</button>
+        <p id="or">OR</p>
+        
+        <div id="inputss2">
+        <input class="logininputs" placeholder="Login with Facebook"/>
+        <input class="logininputs" placeholder="Login with Google+"/>
+        </div>
+        
     </body>
 </html>
