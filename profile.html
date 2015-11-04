@@ -1,0 +1,174 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Your Profile - Bookit@BCIT</title>
+	<link rel="stylesheet" href="css/foundation.css" />
+
+<style>
+  body {
+  	background: url(images/background.jpg) no-repeat center fixed; 
+  	background-size: cover;
+  }
+
+/* =====TOP===== */
+#header {
+    z-index: 1;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 4%;
+    background-color: #16335a;        
+}
+    
+#logo {
+    z-index: 2;
+    width: 40%;
+    height: auto;       
+    margin-top: 5px;
+}
+
+/* =====BODY===== */
+  .container-profile-page {
+    margin-top: 20px;
+    }
+
+  .photo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    border: solid 0.5px #fff;
+  }
+
+   .intro-profile-page {
+     margin-top: 10px;
+     color:#fff;
+     text-align: center;
+   }
+
+   .name {
+      font-size: 7vw;
+      font-weight: 300;
+      margin-bottom: -10px;
+    }
+
+ 	/* Buttons */
+    .fullWidth {
+	   width: 100%;
+	   margin-left: auto;
+	   margin-right: auto;
+	   margin: 3px;
+	   max-width: initial;
+	   text-align: left;
+
+	}
+
+	.arrow {
+		width:20px;
+		height: auto;
+		float:right;
+	}
+
+    .email {
+      color: #fff;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.3);	
+    }
+
+    .phone {
+      color: #fff;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.3)
+    }
+
+    .password {
+      color: #fff;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.3)
+    }
+
+    .logout {
+      text-align: right;
+      font-size: 16px;
+      color: #fff;
+      margin-right: 30px;
+      margin-top: 20px;
+    }
+
+  /* =====BOTTOM===== */
+  .bottom {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    }
+
+  .bottom-bar{
+    background: #fff;
+    color: #d1d1d1;
+  }
+
+  .blue{
+      color:  #16335a;
+  }
+</style>
+
+</head>
+
+<body>
+
+<!-- =====HEADER===== --> 
+<div id="header">
+  <div>
+    <img id="logo" src="images/logo.png"/>
+  </div>
+</div>
+
+<!-- =====BODY===== --> 
+<section class="container-profile-page">
+  <div class="row">
+    <img src="" align="middle" class="photo">
+    <p class="intro-profile-page name">Kate Chappman</p>
+    <p class="intro-profile-page stuid">A00925043</p>
+
+        <div class="row fullwidth">
+          <div class="large-12 columns">  
+             <button class="email fullwidth">kchappman@gmail.com<img class="arrow" src="images/icon-arrow.png"></button>
+             <button class="phone fullwidth">778-888-1234<img class="arrow" src="images/icon-arrow.png"></button>
+             <button class="password fullwidth">*********<img class="arrow" src="images/icon-arrow.png"></button>
+          </div>
+        </div>
+
+  </div>
+
+<a href="#"><h1 class="logout">Log out<img class="arrow" src="images/icon-arrow.png"></button></h1></a>
+
+</section>
+
+  
+<!-- =====FOOTER===== -->    
+<div class="bottom bottom-bar icon-bar four-up">
+  <a class="item">
+    <img  src="images/Icons-24.png" >
+    <label>Schedule</label>
+  </a>
+
+  <a class="item">
+    <img src="images/Icons-18.png" >
+    <label>Maps</label>
+  </a>
+
+  <a class="item">
+    <img src="images/Icons-22.png" >
+    <label2 class="blue">Booking</label2>
+  </a>
+
+  <a class="item">
+    <img src="images/Icons-20.png" >
+    <label>Profile</label>
+  </a>
+</div>
+
+</body>
+</html>
