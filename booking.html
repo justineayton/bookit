@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking A New Room - Bookit@BCIT</title>
+    <title>maps</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+            
+<style>
+@media screen and (max-width: 768px) {
+
+  body {
+    background: url(img/background.jpg) no-repeat center fixed; 
+    background-size: cover;
+    }
+
+  /* =====TOP===== */
+  #header {
+    z-index: 1;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 4%;
+    background-color: #16335a;        
+  }
+      
+  #logo {
+    z-index: 2;
+    width: 35%;
+    height: auto;       
+    width: 30%;
+  }
+
+  .backbut{
+    float: right;
+    color: #fff;
+    padding: 3px;
+    background: transparent;
+    border: none
+  }
+
+  /* =====BODY===== */
+  .intro {
+    margin-bottom: 50px;
+    color:#fff;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+
+  .container-booking-page {
+    margin-top: 60px;
+  }
+
+  .intro-booking-page {
+    margin-bottom: 50px;
+    color:#fff;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+
+  #nextbut {
+    width: 70%;
+    height: 50px;
+    background-color: #3286c4;
+    border: 0;
+    border-radius: 9px;
+    margin-top: 5%;
+    margin-left: 15%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 5px;
+    z-index: 3;
+  }
+
+  /* =====BOTTOM===== */
+  .bottom {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    }
+
+  .bottom-bar{
+    background: #fff;
+    color: #d1d1d1;
+  }
+
+  .blue{
+      color:  #16335a;
+  }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- =====HEADER===== --> 
+<div id="header">
+  <div>
+    <img id="logo" src="img/logo.png"/>
+      <button class="backbut">back</button>
+  </div>
+</div>
+
+<!-- =====BODY===== -->       
+<section class="container-booking-page">
+  <div class="row">
+    <p class="intro-booking-page">Choose the building, floor, and date <br/> you want to book a study room on.</p>
+
+    <div class="small-11 large-10 columns small-centered">
+  
+      <form class="custom">
+        <div class="row">
+          <div class="large-3 small-12 columns">  
+
+            <select>
+              <option value="Building">Building</option>
+              <option value="Library SE14">Library SE14</option>
+            </select>
+              
+            <select>
+              <option value="Floor">Floor</option>
+              <option value="1">1</option>
+            </select>
+
+            <select>
+              <option value="Date">Date</option>
+              <option value="24/10/15">24/10/15</option>
+            </select>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<button id="nextbut">Next</button>
+
+<!-- =====FOOTER===== -->    
+<div class="bottom bottom-bar icon-bar four-up">
+  <a class="item">
+    <img  src="img/schedule-fade.png" >
+    <label>Schedule</label>
+  </a>
+
+  <a class="item">
+    <img src="img/maps-fade.png" >
+    <label>Maps</label>
+  </a>
+
+  <a class="item">
+    <img src="img/booking.png" >
+    <label2 class="blue">Booking</label2>
+  </a>
+
+  <a class="item">
+    <img src="img/profile-fade.png" >
+    <label>Profile</label>
+  </a>
+  
+</div>
+
+    
+    
+    
+  </body>
+</html>
