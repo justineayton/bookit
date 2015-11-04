@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chnage Phone Number</title>
+    <title>Send to friends</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
       
@@ -31,11 +31,10 @@ body {
 
 .intro {
 	color:#fff;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	text-align: center;
-    font-size: 18px;
-    font-weight: 100;
-    margin-top: 8%;
+    font-size: 5vw;
+    font-weight: 300;
+    margin-top: 5%;
     padding:15px;
     opacity: 0.7;
 }
@@ -80,15 +79,6 @@ body {
 	width: 40%;
 }
 
-.intro {
-	color:#fff;
-	text-align: center;
-    font-size: 5vw;
-    font-weight: 100;
-    margin-top: 10%;
-    padding:15px;
-    opacity: 0.7;
-}
 
 .mybar{
 background: #ffffff;
@@ -108,8 +98,8 @@ color:  #16335a;
 }
 
                 #login {
-                background-color: #ffffff;
-                color: #16335a;
+                background-color: #4b86b2;
+                color: #ffffff;
                 width: 60%;
                 border-radius: 9px;
                 border: 0;
@@ -117,8 +107,9 @@ color:  #16335a;
                 margin-left: 20%;
                 margin-right: 20%;
                 height: 9%;
-                font-size: 1em;
-                    font-size: 18px;
+                font-size: 4.5vw;
+                font-weight: 300;
+                
 
             }
     
@@ -129,20 +120,16 @@ color:  #16335a;
                width:100%;
                 padding: 4%;
                 background-color: #16335a;
-    
                 
                 
             }
   
     #logo {
-                z-index: 2;
+        z-index: 2;
                 width: 35%;
                 height: auto;
                
         width: 30%;
-        
-    
-    
             }
     
     
@@ -154,30 +141,17 @@ color:  #16335a;
                 margin-top: 5%;
                 margin-bottom: 2%;
                 z-index: 3;
-                background-color: rgba(209, 209, 209, 0.37);
+                background-color: rgba(75, 134, 178, 0.85);
                 border: 0;
                 font-size: 15px;
                 color: #fff;
                 
             }
     .placeholder-top{
-    margin-top: 20%;
+    margin-top: 0%;
     }
-    
-    .top-bar .name h1 a:before {
-    background-image: url('logo.png');
-    background-size:18px 18px;
-    background-repeat: no-repeat;
-
-}
-    .toplogo{
-    width: 30%;
-    
-    margin: 0px;
-    
-    }
-    
-    .right{
+            
+ .right{
      background-color: #4b86b2;
      text-align: center;
      font-size: 4vw;
@@ -188,8 +162,31 @@ color:  #16335a;
       width: 16%;
   
     }
+    
+    .switch-on {
+  position: absolute;
+  left: -55px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px; 
+    }
 
-            
+.switch-off {
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+
+.privetbooking{
+    color: white;
+    font-weight: 200;
+    position: absolute;
+}
 
 }
 
@@ -207,29 +204,83 @@ color:  #16335a;
           <div>
             <img id="logo" src="images/logo.png"/>
               <h1 class="right">back</h1>
+              
               </div>
         </div>
       
-    
+     
         
-      
-      
       <form>
           
-  <div class="placeholder-top">
+  
+       <p class="intro">Finalize your booking.</p>
+       
   <div class="row">
     <div class="large-12 columns">
       <div class="row collapse">
-        <div class="small-10 columns">
-          <input type="text" placeholder="Change your phone number">
+        <div class="small-20 columns">
+          <input class="input1" type="text" placeholder="Enter your BCIT ID">  
         </div>
-        <div class="small-2 columns">
-          <a href="#" class="button postfix">Save</a>
-        </div>
-      </div>
-    </div>
+           <select>
+                <option value="Building">Date</option>
+                <option value="Library SE14">December 31st 2-15</option>
+              </select>
+        <select>
+                <option value="Building">Time</option>
+                <option value="Library SE14">10am-11am</option>
+              </select>
+           <select>
+                <option value="Building">Building</option>
+                <option value="Library SE14">Library SE14</option>
+              </select>
+           <select>
+                <option value="Building">Room</option>
+                <option value="Library SE14">139</option>
+              </select>  
+      </div> 
+    </div> 
   </div>
+    
+      </br>
+          
+      
+          <div class="row">
+    <div class="large-12 columns">
+      <div class="row collapse">
+        <div class="small-20 columns">
+              <div>
+           
+               <div class="switch round">
+  <p class="privetbooking">Keep my booking privet</p>
+  <input id="on-off" type="checkbox">
+    <label for="on-off">
+      <span class="switch-on">Yes</span>
+      <span class="switch-off">No</span>
+  </label>
 </div>
+              
+              </div>
+          
+          
+        </div>
+          
+      </div> 
+    </div> 
+  </div>
+          
+          
+          
+         
+         
+          
+ 
+
+
+          
+          
+
+          
+      
   
   </div>
 </form>
@@ -244,12 +295,12 @@ color:  #16335a;
     <label>Maps</label>
   </a>
   <a class="item">
-    <img src="images/Icons-19.png" >
-    <label class="blue">Booking</label2>
+    <img src="images/Icons-22.png" >
+    <label2 class="blue">Booking</label2>
   </a>
   <a class="item">
-    <img src="images/Icons-21.png" >
-    <label2 class="blue">Profile</label>
+    <img src="images/Icons-20.png" >
+    <label class="blue">Profile</label>
   </a>
   
 </div>
