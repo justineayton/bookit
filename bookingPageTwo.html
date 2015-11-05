@@ -162,8 +162,31 @@ color:  #16335a;
       width: 16%;
   
     }
+    
+    .switch-on {
+  position: absolute;
+  left: -55px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px; 
+    }
 
-            
+.switch-off {
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+
+.privetbooking{
+    color: white;
+    font-weight: 200;
+    position: absolute;
+}
 
 }
 
@@ -181,33 +204,83 @@ color:  #16335a;
           <div>
             <img id="logo" src="images/logo.png"/>
               <h1 class="right">back</h1>
+              
               </div>
         </div>
+      
      
         
       <form>
           
   
-       <p class="intro">Send to your group members.</p>
-        <div class="large-3 small-12 columns">
-            </br>
-              <select>
-                <option value="Add Members">Add Members</option>
-                <option value="Members">604-333-4566</option>
+       <p class="intro">Finalize your booking.</p>
+       
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row collapse">
+        <div class="small-20 columns">
+          <input class="input1" type="text" placeholder="Enter your BCIT ID">  
+        </div>
+           <select>
+                <option value="Building">Date</option>
+                <option value="Library SE14">December 31st 2-15</option>
               </select>
-              
-          </div>
+        <select>
+                <option value="Building">Time</option>
+                <option value="Library SE14">10am-11am</option>
+              </select>
+           <select>
+                <option value="Building">Building</option>
+                <option value="Library SE14">Library SE14</option>
+              </select>
+           <select>
+                <option value="Building">Room</option>
+                <option value="Library SE14">139</option>
+              </select>  
+      </div> 
+    </div> 
+  </div>
+    
+      </br>
           
+      
           <div class="row">
     <div class="large-12 columns">
-      <label>
-        <textarea placeholder="Write a custom message"></textarea>
-      </label>
-    </div>
+      <div class="row collapse">
+        <div class="small-20 columns">
+              <div>
+           
+               <div class="switch round">
+  <p class="privetbooking">Keep my booking privet</p>
+  <input id="on-off" type="checkbox">
+    <label for="on-off">
+      <span class="switch-on">Yes</span>
+      <span class="switch-off">No</span>
+  </label>
+</div>
+              
+              </div>
+          
+          
+        </div>
+          
+      </div> 
+    </div> 
   </div>
-      </br>
-          <button id="login">bookit</button>
-    
+          
+          
+          
+         
+         
+          
+ 
+
+
+          
+          
+
+          
+      
   
   </div>
 </form>
