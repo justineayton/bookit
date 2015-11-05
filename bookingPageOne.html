@@ -1,15 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking A New Room - Bookit@BCIT</title>
-    <title>maps</title>
     <link rel="stylesheet" href="css/foundation.css" />
             
 <style>
 @media screen and (max-width: 768px) {
-
   body {
     background: url(images/background.jpg) no-repeat center fixed; 
     background-size: cover;
@@ -32,12 +30,12 @@
     width: 30%;
   }
 
-  .backbut{
+  .back{
     float: right;
     color: #fff;
-    padding: 3px;
     background: transparent;
-    border: none
+    border: none;
+    margin-right: 5px;
   }
 
   /* =====BODY===== */
@@ -50,11 +48,11 @@
     opacity: 0.7;
   }
 
-  .container-booking-page {
+  .container {
     margin-top: 60px;
   }
 
-  .intro-booking-page {
+  .intro {
     margin-bottom: 50px;
     color:#fff;
     text-align: center;
@@ -105,14 +103,14 @@
 <div id="header">
   <div>
     <img id="logo" src="images/logo.png"/>
-      <button class="backbut">back</button>
+      <a href="#"><p class="back">back</p></a>
   </div>
 </div>
 
 <!-- =====BODY===== -->       
-<section class="container-booking-page">
+<section class="container">
   <div class="row">
-    <p class="intro-booking-page">Choose the building, floor, and date <br/> you want to book a study room on.</p>
+    <p class="intro">Choose the building, floor, and date <br/> you want to book a study room on.</p>
 
     <div class="small-11 large-10 columns small-centered">
   
@@ -151,7 +149,7 @@
     <label>Schedule</label>
   </a>
 
-  <a class="item">
+  <a href="maps.html" class="item">
     <img src="images/Icons-18.png" >
     <label>Maps</label>
   </a>
@@ -161,7 +159,7 @@
     <label2 class="blue">Bookit</label2>
   </a>
 
-  <a class="item">
+  <a href="profile.html" class="item">
     <img src="images/Icons-20.png" >
     <label>Profile</label>
   </a>
