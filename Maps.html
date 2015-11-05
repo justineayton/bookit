@@ -196,6 +196,41 @@ color:  #16335a;
       height: 45px;
       margin-top:25px; 
     }
+	
+	.box {
+  padding: 5px;
+  display: none;
+  margin-top: 10px;
+  border: 0px solid #000;
+}
+.box img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  width: 98%;
+
+}
+.BbySE14Library1stfloor {
+  background: ;
+}
+.BbySE14Library2ndfloor {
+  background: ;
+}
+.BbySE14Library3rdfloor {
+  background: ;
+}
+.BbySW11stfloor  {
+  background: ;
+}
+.BbySW12ndfloor {
+  background: ;
+}
+.BbySE23rdfloor {
+  background: ;
+}
+.ATCLibrary {
+  background: ;
+}
 
 
             
@@ -206,7 +241,9 @@ color:  #16335a;
 }
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
   </head>
+  
   <body>
       
       
@@ -222,20 +259,20 @@ color:  #16335a;
      <section class="search">
   <div class="row">
     <div class="small-12 large-10 columns small-centered">
-      <p class="intro">View the types of rooms and
-the floor layout before booking!</p>
+      <p class="intro">View study room options. </p>
       <form class="custom">
         <div class="row">
           <div class="large-3 small-12 columns">
             
               <select>
-                <option value="Building">Building</option>
-                <option value="Library SE14">Library SE14</option>
-              </select>
-              
-              <select>
-                <option value="Floor">Floor</option>
-                <option value="1">1</option>
+                <option  value="StudyRooms" style="display: none;">Choose</option>
+                <option value="Bby SE14 Library 1st floor">Bby SE14 Library 1st floor</option>
+                 <option value="Bby SE14 Library 2nd floor">Bby SE14 Library 2nd floor</option>
+                  <option value="Bby SE14 Library 3rd floor">Bby SE14 Library 3rd floor</option>
+                   <option value="Bby SW1 1st floor">Bby SW1 1st floor</option>
+                    <option value="Bby SW1 2nd floor">Bby SW1 2nd floor</option>
+                  	  <option value="Bby SE2 3rd floor">Bby SE2 3rd floor</option>
+                      	<option value="ATC Library">ATC Library</option>
               </select>
           </div>
         </div>
@@ -243,6 +280,29 @@ the floor layout before booking!</p>
     </div>
   </div>
 </section>
+
+<div class="BbySE14Library1stfloor box">
+  <img class="popup" src="images/Bby SE14 Library 1st floor.png" />
+</div>
+<div class="BbySE14Library2ndfloor box">
+  <img src="images/Bby SE14 Library 2nd floor.png" />
+</div>
+<div class="BbySE14Library3rdfloor box">
+  <img src="images/Bby SE14 Library 3rd floor.png" />
+</div>
+<div class="BbySW11stfloor box">
+  <img src="images/Bby SW1 1st floor.png" />
+</div>
+<div class="BbySW12ndfloor box">
+  <img src="images/Bby SW1 2nd floor.png" />
+</div>
+<div class="BbySE23rdfloor box">
+  <img src="images/Bby SE2 3rd floor.png" />
+</div>
+<div class="ATCLibrary box">
+  <img src="images/ATC Library.png" />
+</div>
+
         
       
 
@@ -257,7 +317,7 @@ the floor layout before booking!</p>
   </a>
   <a class="item">
     <img src="images/Icons-19.png" >
-    <label>Booking</label2>
+    <label>Bookit</label2>
   </a>
   <a class="item">
     <img src="images/Icons-20.png" >
@@ -265,9 +325,44 @@ the floor layout before booking!</p>
   </a>
   
 </div>
-
     
     
     
   </body>
+  <script>
+	  $(document).ready(function() {
+	  $("select").change(function() {
+		$("select option:selected").each(function() {
+		  if ($(this).attr("value") == "Bby SE14 Library 1st floor") {
+			$(".box").hide();
+			$(".BbySE14Library1stfloor").show();
+		  }
+		  if ($(this).attr("value") == "Bby SE14 Library 2nd floor") {
+			$(".box").hide();
+			$(".BbySE14Library2ndfloor").show();
+		  }
+		  if ($(this).attr("value") == "Bby SE14 Library 3rd floor") {
+			$(".box").hide();
+			$(".BbySE14Library3rdfloor").show();
+		  }
+		  if ($(this).attr("value") == "Bby SW1 1st floor") {
+			$(".box").hide();
+			$(".BbySW11stfloor").show();
+		  }
+		  if ($(this).attr("value") == "Bby SW1 2nd floor") {
+			$(".box").hide();
+			$(".BbySW12ndfloor").show();
+		  }
+		  if ($(this).attr("value") == "Bby SE2 3rd floor") {
+			$(".box").hide();
+			$(".BbySE23rdfloor").show();
+		  }
+		  if ($(this).attr("value") == "ATC Library") {
+			$(".box").hide();
+			$(".ATCLibrary").show();
+		  }
+		});
+	  }).change();
+	});  
+  </script>
 </html>
