@@ -1172,7 +1172,7 @@ button, .button {
   button.secondary, .button.secondary {
     background-color: #e7e7e7;
     border-color: #b9b9b9;
-    color: #333333; }
+    color: #ffffff; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       background-color: #b9b9b9; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
@@ -1350,7 +1350,7 @@ form .row textarea.columns {
 
 /* Label Styles */
 label {
-  color: #4d4d4d;
+  color: #ffffff;
   cursor: pointer;
   display: block;
   font-size: 0.875rem;
@@ -1366,7 +1366,7 @@ label {
     padding: 0.5625rem 0; }
   label small {
     text-transform: capitalize;
-    color: #676767; }
+    color: ##ffffff; }
 
 /* Attach elements to the beginning or end of an input */
 .prefix,
@@ -1434,13 +1434,13 @@ label {
 span.prefix, label.prefix {
   background: #f2f2f2;
   border-right: none;
-  color: #333333;
+  color: ##ffffff;
   border-color: #cccccc; }
 
 span.postfix, label.postfix {
   background: #f2f2f2;
   border-left: none;
-  color: #333333;
+  color: #ffffff;
   border-color: #cccccc; }
 
 /* We use this to get basic styling on all basic form elements */
@@ -1458,13 +1458,13 @@ input:not([type]), input[type="text"], input[type="password"], input[type="date"
   border-width: 0px;
   border-color: rgba(209, 209, 209, 0.37);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
   display: block;
   font-family: inherit;
-  font-size: 0.875rem;
-  height: 2.3125rem;
-font-weight: 200;
-  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  height: 2.8rem;
+  font-weight: 200;
+  margin: 0 0 0.5rem 0;
   padding: 0.5rem;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1688,7 +1688,7 @@ span.error, small.error {
   color: #FFFFFF; }
 .error > label > small {
   background: transparent;
-  color: #676767;
+  color: #ffffff;
   display: inline;
   font-size: 60%;
   font-style: normal;
@@ -3610,11 +3610,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: white;
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: white; }
   a img {
     border: none; }
 
