@@ -1,116 +1,310 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>sign up page</title>
-    </head>
-    <style>
-        @media screen and (min-device-width: 320px) {
-            body {
-                font-family: "activ_grotesk regular";
-                color: #fff;
-            }
-            
-            #backgroundimg {
-                width: 100%;
-                height: auto;
-                z-index: -1;
-            }
-            
-            #inputss {
-                z-index: 4;
-                top: 10%;
-                position: absolute;
-                display: block;
-                margin-top: 7%;
-            }
-            
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookit@BCIT</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      
+         
+<style>
+@media screen and (min-device-width: 320px) and (orientation: portrait) {
+	html {font-family: sans-serif;}
 
-            
-            .signupinputs {
-                height: 50px;
+img {
+    width: 100%;
+    height: auto;
+}
+
+.input1{
+	
+	opacity: 0.7;
+	text-align: center;
+	
+	
+	}
+	
+.row{
+	
+padding:4%;	
+margin-top: -4%;}
+
+body {
+	background: url(images/d2l.jpg) no-repeat center fixed; 
+	background-size: cover;
+	}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	margin-top: 12%;
+}
+.intro {
+	color:#fff;
+	text-align: center;
+    font-size: 4.5vw;
+    font-weight: 300;
+    margin-top: 3%;
+    padding:7%;
+    opacity: 0.7;
+}
+    
+.intro3 {
+	color:#fff;
+	text-align: center;
+    font-size: 4.5vw;
+    font-weight: 200;
+    opacity: 0.7;
+}
+
+.intro2 {
+	color:#fff;
+	text-align: center;
+    font-size: 3.8vw;
+    font-weight: 300;
+    margin-top: 5%;
+    padding:10px;
+    opacity: 0.4;
+}
+
+.OR {
+	color:#fff;
+	text-align: center;
+    font-size: 3.8vw;
+    font-weight: 300;
+    opacity: 0.4;
+	float: center;
+    text-align: center;
+}
+#backtohome {
+	width: 50%;
+	float:center;
+    color: #fff;
+    border: none;
+    padding: 8%;
+	font-weight: 100;
+    font-size: 18px;
+    background-color: rgba(22, 51, 90, 0.74);
+	margin-top:10%;
+	position: absolute;
+    bottom: 1;
+    left: 0;
+
+}
+
+#signin {
+    width:50%;
+    color: #fff;
+    border: none;
+    padding: 8%;
+	font-weight: 100;
+    font-size: 18px;
+    background-color: rgba(75, 134, 178, 0.49);
+	margin-top:10%;
+	bottom: 0;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
+
+.mybar{
+background: #ffffff;
+color: #d1d1d1;
+}
+    
+.blue{
+color:  #16335a;
+}
+
+.bottom{
+   
+	bottom: 0;
+	position: absolute;
+    left: 0;
+    right: 0;
+}
+
+                #login {
+                background-color: #4b86b2;
+                color: #ffffff;
+                width: 60%;
+                border-radius: 9px;
+                border: 0;
+                z-index: 3;
+                margin-left: 20%;
+                margin-right: 20%;
+                height: 9%;
+                font-size: 4.5vw;
+                font-weight: 300;
+                
+
+            }
+    
+    #header {
+                z-index: 1;
+               top:0;
+               left:0;
+               width:100%;
+                padding: 4%;
+                background-color: #16335a;
+                
+                
+            }
+  
+    #logo {
+        z-index: 2;
+                width: 35%;
+                height: auto;
+               
+        width: 30%;
+            }
+    
+    
+    .signupinputs {
+                height: 60px;
                 width: 80%;
                 margin-left: 10%;
                 margin-right: 10%;
-                margin-top: 3%;
+                margin-top: 5%;
+                margin-bottom: 2%;
                 z-index: 3;
-                background-color: rgba(209, 209, 209, 0.37);
+                background-color: rgba(75, 134, 178, 0.85);
                 border: 0;
                 font-size: 15px;
                 color: #fff;
                 
             }
+    .placeholder-top{
+    margin-top: 0%;
+    }
             
-            #signupbut {
-                background-color: #3286c4;
-                color: #fff;
-                width: 60%;
-                border-radius: 9px;
-                border: 0;
-                z-index: 3;
-                margin-top: 5%;
-                
-                height: 40px;
-                font-size: 20px;
-                margin-left: 18%;
-            }
-            
-            #or {
-                font-size: 50%;
-                color: #fff;
-                margin-left: 48%;
-                text-decoration-line: underline;
-            }
-            
-            #header {
-                z-index: 1;
-                top:0;
-                left:0;
-                width:100%;
-                padding: 4%;
-                background-color: #16335a;
-            
-            }
-            
-            #logo {
-                z-index: 2;
-                width: 30%;
-                height: auto;
-                margin-top: 1%;
-                margin-left: 5%;
-            }
-            
-               
-        }
-        
-        @media screen and (max-device-width: 1020) {
-        
-        }
-    </style>
+ .right{
+     background-color: #4b86b2;
+     text-align: center;
+     font-size: 4vw;
+     color: white;
+     font-family:inherit;
+     font-weight: 200;
+     border-radius: 9px;    
+      width: 16%;
+  
+    }
+    
+    .switch-on {
+  position: absolute;
+  left: -55px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px; 
+    }
 
-    <body> 
-        <div id="header">
-            <a href="landingPage.html"><img id="logo" src="images/logo.png"/></a>
+.switch-off {
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+
+.privetbooking{
+    color: white;
+    font-weight: 200;
+    position: absolute;
+}
+
+ #nextbut {
+    width: 100%;
+    height: 50px;
+    background-color: #4caada;
+    border: 0;
+	margin-top: 5%;
+    border-radius: 12px;
+    color: #fff;
+    line-height: 4px;
+	font-size: 20px;
+	font-weight:200;
+    z-index: 3;
+  }
+  
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fblogo {
+    width: 9%;
+    float: center;
+    text-align: center;
+}
+.googlelogo {
+    width: 6%;
+    float: center;
+    text-align: center;
+}
+#images{
+   text-align:center;
+}
+
+
+}
+
+@media screen and (max-device-width: 1242px) and (orientation: portrait) {
+}
+
+</style>
+  </head>
+  <body >
+
+          <img class="logo fade-in one" src="images/logo.png"/>
+   
+  <div class="row fade-in one">
+    <div class="large-12 columns">
+      <div class="row collapse">
+        <div class="small-20 columns">
+          <input class="input1" type="text" placeholder="Full Name">  
+          <input class="input1" type="text" placeholder="Student ID">
+          <input class="input1" type="text" placeholder="Phone Number">  
+          <input class="input1" type="text" placeholder="Password"> 
+          <input class="input1" type="text" placeholder="Re-enter Password">    
+          
         </div>
-        <img id="backgroundimg" src="images/background.jpg"/>
-        
-        <div id="inputss">
-        <input class="signupinputs" placeholder="Firstname"/>
-        <input class="signupinputs" placeholder="Lastname"/>
-        <input class="signupinputs" placeholder="Password"/>
-        <input class="signupinputs" placeholder="Re-enter Password"/>
-        <input class="signupinputs" placeholder="Email"/>
-        <input class="signupinputs" placeholder="Phone Number"/>
-            
-        
-        
-        <button id="signupbut">Sign Up</button>
-        <p id="or">OR</p>
-        
-        
-        <input class="signupinputs" placeholder="Sign up with Facebook"/>
-        <input class="signupinputs" placeholder="Sign up with Google+"/>
-        </div>
-        
-    </body>
+             <a href="reminders.html"><button id="nextbut">Sign up</button></a>
+      </div> 
+    </div> 
+  </div>
+    
+      <p class="OR fade-in one">Or sign up with<img class="fblogo" src="images/facebook-4096-black copy.png"/> <img class="googlelogo" src="images/google-plus-xxl.png"/></p>
+    <p class="intro2 fade-in one"><a class="link" href="landingPage.html" >Already have an account? Login</a></p>
+    
+  </body>
 </html>

@@ -3610,12 +3610,22 @@ td {
 
 /* Default Link Styles */
 a {
-  color: white;
+  color: rgb(255, 255, 255);
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
     color: white; }
   a img {
+    border: none; }
+
+a.link {
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+  line-height: inherit;
+  text-decoration: none; }
+  a.link:hover, a:focus {
+    color: white; }
+  a.link img {
     border: none; }
 
 /* Default paragraph styles */
